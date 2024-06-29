@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuartel de Bomberos Z - Inicio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bomberos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="holder">
+        <img src="img/logo.png" width="100" alt="Cuartel de Bomberos Z" />
+        <h1>Cuartel de Bomberos Z</h1>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="holder">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+        <li><a class="activo" href="admision.html">Admisión</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="holder">
+      <h2>Admisión al Cuartel de Bomberos Z</h2>
+      <p>
+        Aquí deben llenar los datos aquellos interesados en formar parte del
+        Cuartel de Bomberos Z, siempre y cuando sean mayores de 18 años.
+      </p>
+
+      <h3>Formulario de Admisión</h3>
+      <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="apellido">Apellido:</label><br />
+        <input type="text" id="apellido" name="apellido" required /><br /><br />
+
+        <label for="edad">Edad:</label><br />
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          required
+          min="18"
+        /><br /><br />
+
+        <label for="email">Correo electrónico:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="telefono">Teléfono:</label><br />
+        <input type="tel" id="telefono" name="telefono" required /><br /><br />
+
+        <label for="mensaje">Mensaje adicional:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="holder">
+        <p>Contacto: Teléfono: 123-456-789 | Email: info@bomberosz.com</p>
+        <div class="redes-sociales">
+          <a href="#" class="social">Facebook</a>
+          <a href="#" class="social">Twitter</a>
+          <a href="#" class="social">Instagram</a>
+        </div>
+      </div>
+      <p>Diseñado por Mauricio Barrera - &copy; 2024</p>
+    </footer>
+  </body>
+</html>
